@@ -21,7 +21,7 @@
 include_recipe "build-essential"
 
 case node['platform_family']
-  when 'rhel','fedora','centos'
+  when 'rhel','fedora','centos','amazon', 'scientific'
     package "openssl-devel"
   when 'debian'
     package "libssl-dev"
